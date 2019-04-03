@@ -6,12 +6,14 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
- * Created by zhy on 16/4/22.
+ * 浙江集商优选电子商务有限公司
+ *
+ * @author zenglw
+ * @date 19-4-3 下午5:52
  */
 
-@Retention(RetentionPolicy.CLASS)
-@Target({ElementType.FIELD, ElementType.TYPE})
-public @interface Bind {
+@Retention(RetentionPolicy.SOURCE)
+@Target(ElementType.TYPE)
+public @interface ZlwAno {
     int value();
 }
-
